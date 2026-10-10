@@ -74,6 +74,10 @@ section {
   padding-top: 24px;
 }
 
+section + section {
+  margin-top: 48px;
+}
+
 h2 {
   margin-bottom: 32px;
   font-size: 0.8rem;
@@ -107,10 +111,55 @@ h3 {
   color: #888;
 }
 
-article p {
+article p,
+.section-description {
   max-width: 590px;
   margin-bottom: 0;
   color: #555;
+}
+
+.muted {
+  color: #888;
+}
+
+.table-scroll {
+  max-width: 100%;
+  overflow-x: auto;
+}
+
+.contributions-table {
+  width: 100%;
+  border-collapse: collapse;
+  font-size: 0.85rem;
+  line-height: 1.5;
+}
+
+.contributions-table th,
+.contributions-table td {
+  padding: 10px 12px 10px 0;
+  border-bottom: 1px solid #ded8c8;
+  text-align: left;
+  vertical-align: top;
+}
+
+.contributions-table th {
+  color: #777;
+  font-weight: 600;
+}
+
+.contributions-table td:first-child,
+.contributions-table td:nth-child(3),
+.contributions-table td:last-child {
+  white-space: nowrap;
+}
+
+.contributions-table td:nth-child(2) {
+  overflow-wrap: anywhere;
+}
+
+.contributions-table th:last-child,
+.contributions-table td:last-child {
+  padding-right: 0;
 }
 
 footer {
@@ -137,5 +186,9 @@ footer {
   .project-heading span {
     display: block;
     margin-top: 2px;
+  }
+
+  .contributions-table {
+    min-width: 580px;
   }
 }
