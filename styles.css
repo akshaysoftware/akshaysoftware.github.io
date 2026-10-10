@@ -48,9 +48,15 @@ h1 {
 
 .intro {
   max-width: 540px;
-  margin-bottom: 20px;
+  margin-bottom: 12px;
   color: #555;
   font-size: 1.05rem;
+}
+
+.cv-note {
+  margin-bottom: 20px;
+  color: #777;
+  font-size: 0.9rem;
 }
 
 nav {
