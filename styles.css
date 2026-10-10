@@ -118,10 +118,6 @@ article p,
   color: #555;
 }
 
-.muted {
-  color: #888;
-}
-
 .table-scroll {
   max-width: 100%;
   overflow-x: auto;
@@ -147,14 +143,12 @@ article p,
   font-weight: 600;
 }
 
-.contributions-table td:first-child,
-.contributions-table td:nth-child(3),
-.contributions-table td:last-child {
-  white-space: nowrap;
+.contributions-table td:first-child {
+  overflow-wrap: anywhere;
 }
 
-.contributions-table td:nth-child(2) {
-  overflow-wrap: anywhere;
+.contributions-table td:last-child {
+  white-space: nowrap;
 }
 
 .contributions-table th:last-child,
@@ -189,6 +183,6 @@ footer {
   }
 
   .contributions-table {
-    min-width: 580px;
+    min-width: 540px;
   }
 }
