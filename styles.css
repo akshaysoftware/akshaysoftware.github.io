@@ -103,6 +103,29 @@ h3 {
   font-weight: 600;
 }
 
+#oss-heading {
+  margin-bottom: 8px;
+}
+
+.oss-intro {
+  margin-bottom: 28px;
+}
+
+.oss-group + .oss-group {
+  margin-top: 30px;
+}
+
+.oss-group h3 {
+  margin-bottom: 12px;
+}
+
+.contribution-description {
+  margin: 4px 0 0;
+  color: #777;
+  font-size: 0.8rem;
+  line-height: 1.45;
+}
+
 article p,
 .section-description {
   max-width: 590px;
