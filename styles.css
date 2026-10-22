@@ -107,16 +107,14 @@ h3 {
   margin-bottom: 8px;
 }
 
-.oss-intro {
-  margin-bottom: 28px;
-}
-
 .oss-group + .oss-group {
-  margin-top: 30px;
+  margin-top: 32px;
 }
 
 .oss-group h3 {
   margin-bottom: 12px;
+  color: #555;
+  font-size: 0.875rem;
 }
 
 .contribution-description {
@@ -131,6 +129,13 @@ article p,
   max-width: 590px;
   margin-bottom: 0;
   color: #555;
+}
+
+.oss-intro {
+  margin-bottom: 32px;
+  color: #777;
+  font-size: 0.78rem;
+  line-height: 1.5;
 }
 
 .table-scroll {
