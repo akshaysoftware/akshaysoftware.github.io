@@ -4,186 +4,38 @@
 <head>
     <meta charset="utf-8">
     <meta name="viewport" content="width=device-width, initial-scale=1">
-
     <title>Akshay Pal</title>
     <meta name="description" content="Akshay Pal — software engineer working on backend systems, developer tooling and quantum software.">
-
     <link rel="stylesheet" href="styles.css">
+    <script src="legacy-navigation.js" defer></script>
 </head>
 
 <body>
-    <main>
-        <header>
+    <main class="home">
+        <header class="home-header">
+            <div class="profile-photo">
+                <img src="assets/akshay-pal.jpeg" alt="Akshay Pal" width="1536" height="2048">
+            </div>
             <h1>Akshay Pal</h1>
 
-            <p class="intro">
-                Software engineer working on backend systems, developer tooling
-                and quantum software.
-            </p>
-
-            <p class="cv-note">
-                If you'd like a copy of my CV, <a href="mailto:akshay.anu@gmail.com">email me</a>.
-            </p>
-
-            <nav aria-label="Links">
+            <nav class="profile-links" aria-label="Profile links">
                 <a href="https://github.com/akshaysoftware">GitHub</a>
                 <a href="https://www.linkedin.com/in/akshay-pal-4aa102183/">LinkedIn</a>
                 <a href="mailto:akshay.anu@gmail.com">Email</a>
             </nav>
+
+            <p class="cv-note">
+                If you'd like a copy of my CV, <a href="mailto:akshay.anu@gmail.com">email me</a>.
+            </p>
         </header>
 
-        <section aria-labelledby="work-heading">
-            <h2 id="work-heading">Selected work</h2>
-
-            <article>
-                <h3><a href="https://github.com/akshaysoftware/basis">Basis</a></h3>
-                <p>A strongly typed, hardware-agnostic quantum programming language written in C++.</p>
-            </article>
-
-            <article>
-                <h3><a href="https://github.com/akshaysoftware/cambio">Cambio</a></h3>
-                <p>A multiplayer card game built with Java and React.</p>
-            </article>
-
-            <article>
-                <h3><a href="https://github.com/akshaysoftware/nanoproc">nanoproc</a></h3>
-                <p>A Java library for managing child processes and communicating with workers.</p>
-            </article>
-        </section>
-
-        <section aria-labelledby="oss-heading">
-            <h2 id="oss-heading">OSS Contributions</h2>
-            <p class="section-description oss-intro">A full list of my OSS contributions</p>
-
-            <div class="oss-group">
-                <h3>Quantum Compilers &amp; SDKs</h3>
-                <div class="table-scroll" role="region" aria-label="Quantum compilers and SDK contributions" tabindex="0">
-                    <table class="contributions-table">
-                        <thead>
-                            <tr>
-                                <th scope="col">Repository</th>
-                                <th scope="col">Pull request</th>
-                                <th scope="col">Date merged</th>
-                            </tr>
-                        </thead>
-                        <tbody>
-                            <tr>
-                                <td>Quantinuum/tket2</td>
-                                <td>
-                                    <a href="https://github.com/Quantinuum/tket2/pull/2021">Parse pi as a constant</a>
-                                    <p class="contribution-description">Treats pi as a constant rather than a variable.</p>
-                                </td>
-                                <td><time datetime="2026-09-22">22 Sep 2026</time></td>
-                            </tr>
-                            <tr>
-                                <td>Quantinuum/guppylang</td>
-                                <td>
-                                    <a href="https://github.com/Quantinuum/guppylang/pull/2342">Fix generic capture ownership</a>
-                                    <p class="contribution-description">Corrects ownership flags for copyable generic values.</p>
-                                </td>
-                                <td><time datetime="2026-09-23">23 Sep 2026</time></td>
-                            </tr>
-                            <tr>
-                                <td>Quantinuum/guppylang</td>
-                                <td>
-                                    <a href="https://github.com/Quantinuum/guppylang/pull/2393">Resolve methods from protocol bounds</a>
-                                    <p class="contribution-description">Enables protocol methods in generic functions.</p>
-                                </td>
-                                <td><time datetime="2026-10-07">7 Oct 2026</time></td>
-                            </tr>
-                            <tr>
-                                <td>quantumlib/Cirq</td>
-                                <td>
-                                    <a href="https://github.com/quantumlib/Cirq/pull/8376">Fix classically controlled QASM output</a>
-                                    <p class="contribution-description">Exports multi-statement conditional gates correctly.</p>
-                                </td>
-                                <td><time datetime="2026-10-07">7 Oct 2026</time></td>
-                            </tr>
-                        </tbody>
-                    </table>
-                </div>
-            </div>
-
-            <div class="oss-group">
-                <h3>Quantum Tooling &amp; Infrastructure</h3>
-                <div class="table-scroll" role="region" aria-label="Quantum tooling and infrastructure contributions" tabindex="0">
-                    <table class="contributions-table">
-                        <thead>
-                            <tr>
-                                <th scope="col">Repository</th>
-                                <th scope="col">Pull request</th>
-                                <th scope="col">Date merged</th>
-                            </tr>
-                        </thead>
-                        <tbody>
-                            <tr>
-                                <td>munich-quantum-toolkit/core</td>
-                                <td>
-                                    <a href="https://github.com/munich-quantum-toolkit/core/pull/2668">Handle device allocation failures</a>
-                                    <p class="contribution-description">Keeps memory errors within the device API.</p>
-                                </td>
-                                <td><time datetime="2026-10-03">3 Oct 2026</time></td>
-                            </tr>
-                            <tr>
-                                <td>zxcalc/pyzx</td>
-                                <td>
-                                    <a href="https://github.com/zxcalc/pyzx/pull/532">Reject conditional gates in graph conversion</a>
-                                    <p class="contribution-description">Prevents unsupported gates from becoming circuits.</p>
-                                </td>
-                                <td><time datetime="2026-10-06">6 Oct 2026</time></td>
-                            </tr>
-                        </tbody>
-                    </table>
-                </div>
-            </div>
-        </section>
-
-        <section aria-labelledby="education-heading">
-            <h2 id="education-heading">Education</h2>
-
-            <article>
-                <h3>MSc Quantum Technology Applications and Management</h3>
-                <p>University of Sussex &middot; Distinction</p>
-            </article>
-
-            <article>
-                <h3>MEng Engineering Science</h3>
-                <p>University of Oxford &middot; Upper Second-Class Honours (2.1)</p>
-            </article>
-        </section>
-
-        <section aria-labelledby="certifications-heading">
-            <h2 id="certifications-heading">Certifications</h2>
-
-            <div class="credential-group">
-                <h3>Beginner</h3>
-
-                <article>
-                    <h4><a href="https://www.credly.com/badges/38c3ec8c-734f-4260-9e45-064e26b77e6d/public_url">Quantum-Safe Encryption Essentials</a></h4>
-                    <p>IBM &middot; Course badge</p>
-                </article>
-
-                <article>
-                    <h4><a href="https://www.credly.com/badges/ec0a1e84-a243-4007-a065-0dcb7dc62eb7/public_url">Fundamentals of Quantum Computing (LFQ101)</a></h4>
-                    <p>The Linux Foundation &middot; Course badge</p>
-                </article>
-
-                <article>
-                    <h4><a href="https://learn.microsoft.com/en-us/users/akshaypal-7403/achievements/watmr35n">Get Started with Azure Quantum</a></h4>
-                    <p>Microsoft &middot; Learning achievement</p>
-                </article>
-            </div>
-        </section>
-
-        <section aria-labelledby="substack-heading">
-            <h2 id="substack-heading">Substack</h2>
-            <p class="section-description">
-                I write <a href="https://akshayuncommitted.substack.com/">Uncommitted</a>,
-                a weekly personal journal about software, open source, and life along the way.
-            </p>
-        </section>
+        <nav class="section-buttons" aria-label="Sections">
+            <a href="projects.html">Projects</a>
+            <a href="education.html">Education</a>
+            <a href="publications.html">Publications</a>
+            <a href="quantum-oss.html">Quantum OSS</a>
+        </nav>
     </main>
 </body>
 
 </html>
-
