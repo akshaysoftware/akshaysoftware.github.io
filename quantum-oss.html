@@ -4,8 +4,8 @@
 <head>
     <meta charset="utf-8">
     <meta name="viewport" content="width=device-width, initial-scale=1">
-    <title>Quantum OSS — Akshay Pal</title>
-    <meta name="description" content="Quantum OSS by Akshay Pal.">
+    <title>Open Source — Akshay Pal</title>
+    <meta name="description" content="Merged contributions by Akshay Pal to quantum compilers, SDKs and tooling in Python, Rust and C++.">
     <link rel="stylesheet" href="styles.css">
 </head>
 
@@ -17,18 +17,22 @@
             <a href="projects.html">Projects</a>
             <a href="education.html">Education</a>
             <a href="publications.html">Publications</a>
-            <a href="quantum-oss.html" aria-current="page">Quantum OSS</a>
+            <a href="quantum-oss.html" aria-current="page">Open Source</a>
         </nav>
     </header>
 
     <main>
         <header class="page-header">
-            <h1>Quantum OSS</h1>
+            <h1>Open Source</h1>
         </header>
 
         <section aria-labelledby="oss-heading">
-            <h2 id="oss-heading">OSS Contributions</h2>
-            <p class="section-description oss-intro">A full list of my OSS contributions</p>
+            <h2 id="oss-heading">Quantum software contributions</h2>
+            <p class="section-description oss-intro">
+                I've contributed six merged pull requests across five quantum software repositories:
+                Cirq, Guppylang, tket2, PyZX and MQT Core. My contributions span compiler behaviour,
+                circuit export and error handling in Python, Rust and C++.
+            </p>
 
             <div class="oss-group">
                 <h3>Quantum Compilers &amp; SDKs</h3>
@@ -37,6 +41,7 @@
                         <thead>
                             <tr>
                                 <th scope="col">Repository</th>
+                                <th scope="col">Language</th>
                                 <th scope="col">Pull request</th>
                                 <th scope="col">Date merged</th>
                             </tr>
@@ -44,6 +49,7 @@
                         <tbody>
                             <tr>
                                 <td>Quantinuum/tket2</td>
+                                <td>Rust</td>
                                 <td>
                                     <a href="https://github.com/Quantinuum/tket2/pull/2021">Parse pi as a constant</a>
                                     <p class="contribution-description">Treats pi as a constant rather than a variable.</p>
@@ -52,6 +58,7 @@
                             </tr>
                             <tr>
                                 <td>Quantinuum/guppylang</td>
+                                <td>Python</td>
                                 <td>
                                     <a href="https://github.com/Quantinuum/guppylang/pull/2342">Fix generic capture ownership</a>
                                     <p class="contribution-description">Corrects ownership flags for copyable generic values.</p>
@@ -60,6 +67,7 @@
                             </tr>
                             <tr>
                                 <td>Quantinuum/guppylang</td>
+                                <td>Python</td>
                                 <td>
                                     <a href="https://github.com/Quantinuum/guppylang/pull/2393">Resolve methods from protocol bounds</a>
                                     <p class="contribution-description">Enables protocol methods in generic functions.</p>
@@ -68,6 +76,7 @@
                             </tr>
                             <tr>
                                 <td>quantumlib/Cirq</td>
+                                <td>Python</td>
                                 <td>
                                     <a href="https://github.com/quantumlib/Cirq/pull/8376">Fix classically controlled QASM output</a>
                                     <p class="contribution-description">Exports multi-statement conditional gates correctly.</p>
@@ -86,6 +95,7 @@
                         <thead>
                             <tr>
                                 <th scope="col">Repository</th>
+                                <th scope="col">Language</th>
                                 <th scope="col">Pull request</th>
                                 <th scope="col">Date merged</th>
                             </tr>
@@ -93,6 +103,7 @@
                         <tbody>
                             <tr>
                                 <td>munich-quantum-toolkit/core</td>
+                                <td>C++</td>
                                 <td>
                                     <a href="https://github.com/munich-quantum-toolkit/core/pull/2668">Handle device allocation failures</a>
                                     <p class="contribution-description">Keeps memory errors within the device API.</p>
@@ -101,9 +112,10 @@
                             </tr>
                             <tr>
                                 <td>zxcalc/pyzx</td>
+                                <td>Python</td>
                                 <td>
                                     <a href="https://github.com/zxcalc/pyzx/pull/532">Reject conditional gates in graph conversion</a>
-                                    <p class="contribution-description">Prevents unsupported gates from becoming circuits.</p>
+                                    <p class="contribution-description">Rejects unsupported conditional gates during graph conversion.</p>
                                 </td>
                                 <td><time datetime="2026-10-06">6 Oct 2026</time></td>
                             </tr>
@@ -111,6 +123,25 @@
                     </table>
                 </div>
             </div>
+        </section>
+
+        <section aria-labelledby="featured-contribution-heading">
+            <h2 id="featured-contribution-heading">Featured contribution</h2>
+
+            <article>
+                <h3><a href="https://github.com/quantumlib/Cirq/pull/8376">Preserving classical controls in Cirq's OpenQASM output</a></h3>
+                <p>
+                    When an operation expanded into multiple OpenQASM statements, Cirq applied its
+                    classical condition only to the first statement. I updated the exporter to apply
+                    the condition to each statement in OpenQASM 2.0 and wrap the full operation in a
+                    conditional block in OpenQASM 3.0.
+                </p>
+                <p>
+                    I added regression tests for both formats, including a classically controlled
+                    CCZ gate, and covered multiple statements on one line and whitespace-only output.
+                    The fix was merged on <time datetime="2026-10-07">7 October 2026</time>.
+                </p>
+            </article>
         </section>
     </main>
 </body>
