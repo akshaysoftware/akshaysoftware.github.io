@@ -4,8 +4,8 @@
 <head>
     <meta charset="utf-8">
     <meta name="viewport" content="width=device-width, initial-scale=1">
-    <title>Quantum OSS — Akshay Pal</title>
-    <meta name="description" content="Quantum OSS by Akshay Pal.">
+    <title>Open Source — Akshay Pal</title>
+    <meta name="description" content="Merged contributions by Akshay Pal to quantum compilers, SDKs and tooling in Python, Rust and C++.">
     <link rel="stylesheet" href="styles.css">
 </head>
 
@@ -17,59 +17,72 @@
             <a href="projects.html">Projects</a>
             <a href="education.html">Education</a>
             <a href="publications.html">Publications</a>
-            <a href="quantum-oss.html" aria-current="page">Quantum OSS</a>
+            <a href="quantum-oss.html" aria-current="page">Open Source</a>
         </nav>
     </header>
 
     <main>
         <header class="page-header">
-            <h1>Quantum OSS</h1>
+            <h1>Open Source</h1>
         </header>
 
         <section aria-labelledby="oss-heading">
-            <h2 id="oss-heading">OSS Contributions</h2>
-            <p class="section-description oss-intro">A full list of my OSS contributions</p>
+            <h2 id="oss-heading">Quantum software contributions</h2>
+            <p class="section-description oss-intro">
+                I have contributions across five quantum software repositories spanning compiler behaviour, circuit export and error handling, written across Python, Rust and C++.
+            </p>
 
             <div class="oss-group">
                 <h3>Quantum Compilers &amp; SDKs</h3>
                 <div class="table-scroll" role="region" aria-label="Quantum compilers and SDK contributions" tabindex="0">
                     <table class="contributions-table">
+                        <colgroup>
+                            <col class="repository-column">
+                            <col class="language-column">
+                            <col class="pull-request-column">
+                            <col class="merged-column">
+                        </colgroup>
                         <thead>
                             <tr>
                                 <th scope="col">Repository</th>
+                                <th scope="col">Language</th>
                                 <th scope="col">Pull request</th>
                                 <th scope="col">Date merged</th>
                             </tr>
                         </thead>
                         <tbody>
                             <tr>
-                                <td>Quantinuum/tket2</td>
+                                <td><code>Quantinuum/tket2</code></td>
+                                <td>Rust</td>
                                 <td>
-                                    <a href="https://github.com/Quantinuum/tket2/pull/2021">Parse pi as a constant</a>
+                                    <a href="https://github.com/Quantinuum/tket2/pull/2021"><span class="pr-number">#2021</span> Parse pi as a constant</a>
                                     <p class="contribution-description">Treats pi as a constant rather than a variable.</p>
                                 </td>
                                 <td><time datetime="2026-09-22">22 Sep 2026</time></td>
                             </tr>
                             <tr>
-                                <td>Quantinuum/guppylang</td>
+                                <td><code>Quantinuum/guppylang</code></td>
+                                <td>Python</td>
                                 <td>
-                                    <a href="https://github.com/Quantinuum/guppylang/pull/2342">Fix generic capture ownership</a>
+                                    <a href="https://github.com/Quantinuum/guppylang/pull/2342"><span class="pr-number">#2342</span> Fix generic capture ownership</a>
                                     <p class="contribution-description">Corrects ownership flags for copyable generic values.</p>
                                 </td>
                                 <td><time datetime="2026-09-23">23 Sep 2026</time></td>
                             </tr>
                             <tr>
-                                <td>Quantinuum/guppylang</td>
+                                <td><code>Quantinuum/guppylang</code></td>
+                                <td>Python</td>
                                 <td>
-                                    <a href="https://github.com/Quantinuum/guppylang/pull/2393">Resolve methods from protocol bounds</a>
+                                    <a href="https://github.com/Quantinuum/guppylang/pull/2393"><span class="pr-number">#2393</span> Resolve methods from protocol bounds</a>
                                     <p class="contribution-description">Enables protocol methods in generic functions.</p>
                                 </td>
                                 <td><time datetime="2026-10-07">7 Oct 2026</time></td>
                             </tr>
                             <tr>
-                                <td>quantumlib/Cirq</td>
+                                <td><code>quantumlib/Cirq</code></td>
+                                <td>Python</td>
                                 <td>
-                                    <a href="https://github.com/quantumlib/Cirq/pull/8376">Fix classically controlled QASM output</a>
+                                    <a href="https://github.com/quantumlib/Cirq/pull/8376"><span class="pr-number">#8376</span> Fix classically controlled QASM output</a>
                                     <p class="contribution-description">Exports multi-statement conditional gates correctly.</p>
                                 </td>
                                 <td><time datetime="2026-10-07">7 Oct 2026</time></td>
@@ -83,27 +96,36 @@
                 <h3>Quantum Tooling &amp; Infrastructure</h3>
                 <div class="table-scroll" role="region" aria-label="Quantum tooling and infrastructure contributions" tabindex="0">
                     <table class="contributions-table">
+                        <colgroup>
+                            <col class="repository-column">
+                            <col class="language-column">
+                            <col class="pull-request-column">
+                            <col class="merged-column">
+                        </colgroup>
                         <thead>
                             <tr>
                                 <th scope="col">Repository</th>
+                                <th scope="col">Language</th>
                                 <th scope="col">Pull request</th>
                                 <th scope="col">Date merged</th>
                             </tr>
                         </thead>
                         <tbody>
                             <tr>
-                                <td>munich-quantum-toolkit/core</td>
+                                <td><code>munich-quantum-toolkit/core</code></td>
+                                <td>C++</td>
                                 <td>
-                                    <a href="https://github.com/munich-quantum-toolkit/core/pull/2668">Handle device allocation failures</a>
+                                    <a href="https://github.com/munich-quantum-toolkit/core/pull/2668"><span class="pr-number">#2668</span> Handle device allocation failures</a>
                                     <p class="contribution-description">Keeps memory errors within the device API.</p>
                                 </td>
                                 <td><time datetime="2026-10-03">3 Oct 2026</time></td>
                             </tr>
                             <tr>
-                                <td>zxcalc/pyzx</td>
+                                <td><code>zxcalc/pyzx</code></td>
+                                <td>Python</td>
                                 <td>
-                                    <a href="https://github.com/zxcalc/pyzx/pull/532">Reject conditional gates in graph conversion</a>
-                                    <p class="contribution-description">Prevents unsupported gates from becoming circuits.</p>
+                                    <a href="https://github.com/zxcalc/pyzx/pull/532"><span class="pr-number">#532</span> Reject conditional gates in graph conversion</a>
+                                    <p class="contribution-description">Rejects unsupported conditional gates during graph conversion.</p>
                                 </td>
                                 <td><time datetime="2026-10-06">6 Oct 2026</time></td>
                             </tr>
@@ -112,6 +134,8 @@
                 </div>
             </div>
         </section>
+
+
     </main>
 </body>
 
