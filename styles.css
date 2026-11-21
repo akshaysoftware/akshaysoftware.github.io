@@ -314,22 +314,41 @@ article p + p {
   white-space: nowrap;
 }
 
-.credentials-list {
+.credential-badges {
+  display: grid;
+  grid-template-columns: repeat(3, minmax(0, 1fr));
+  gap: clamp(12px, 3vw, 24px);
+  width: min(100%, 408px);
   list-style: none;
   padding: 0;
   margin: 0;
-  font-size: 0.9rem;
 }
 
-.credentials-list li {
-  padding: 12px 0;
-  border-bottom: 1px solid #ddd;
+.credential-badges a {
+  display: grid;
+  place-items: center;
+  aspect-ratio: 1;
 }
 
-.credentials-list li:first-child {
-  padding-top: 0;
+.credential-badges img {
+  display: block;
+  width: 100%;
+  height: 100%;
+  object-fit: contain;
 }
 
-.credential-issuer {
-  color: #666;
+@media (prefers-reduced-motion: no-preference) {
+  .credential-badges img {
+    transition: transform 160ms ease;
+  }
+
+  .credential-badges a:focus-visible img {
+    transform: scale(1.06);
+  }
+}
+
+@media (hover: hover) and (prefers-reduced-motion: no-preference) {
+  .credential-badges a:hover img {
+    transform: scale(1.06);
+  }
 }
